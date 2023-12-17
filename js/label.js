@@ -1,6 +1,3 @@
-// Click and Drag an object
-// Daniel Shiffman <http://www.shiffman.net>
-
 class Label {
     constructor(name, x, y, snapX, snapY) {
 
@@ -20,8 +17,6 @@ class Label {
         this.textColor = color(255);
         this.textAlpha = 255;
 
-        // this.w = 165 * 0.75;
-        // this.h = 70 * 0.75;
         this.w = 211 * 0.7;
         this.h = 69 * 0.7;
         sign.resize(this.w, this.h);
@@ -46,14 +41,6 @@ class Label {
         this.x = constrain(this.x, 0 + (this.w / 2), width - (this.w / 2));
         this.y = constrain(this.y, 0 + (this.h / 2), height - (this.h / 2));
 
-        // if (this.snapped && this.correct && !this.hpTextShown) {
-        //     this.hpText = new HpText(this.x + (this.w / 2) + 5, this.y, true);
-        //     this.hpTextShown = true;
-        // } else if (this.snapped && !this.correct && !this.hpTextShown) {
-        //     this.hpText = new HpText(this.x + (this.w / 2) + 5, this.y, false);
-        //     this.hpTextShown = true;
-        // }
-        
         if (this.snapped && !this.hpTextShown) {
             this.hpTextShown = true;
             this.hpText = new HpText(this.x + (this.w / 2) + 5, this.y, this.correct);
@@ -82,7 +69,6 @@ class Label {
                     this.snapped = false;
 
                     if (abs(this.x - points[i].x) < 3 && abs(this.y - points[i].y) < 3) {
-                        // console.log('Snapped');
                         this.snapped = true;
                         this.checkAnswer();
                     }
@@ -112,17 +98,6 @@ class Label {
     show() {
         noStroke();
 
-        // Different fill based on state
-        // if (this.dragging) {
-        //     fill(50);
-        // } else if (this.rollover) {
-        //     fill(100);
-        // } else {
-        //     fill(175);
-        // }
-        
-        // fill(255);
-        // rect(this.x, this.y, this.w, this.h, 15);
         push();
         imageMode(CENTER);
         image(sign, this.x, this.y);
@@ -136,16 +111,6 @@ class Label {
         textSize(16);
         text(this.name, this.x, this.y + 2);
         pop();
-        
-        // if (this.correct) {
-        //     push();
-        //     this.textAlpha = lerp(this.textAlpha, 0, 0.02);
-        //     fill(0, 255, 0, this.textAlpha);
-        //     textStyle(NORMAL);
-        //     textSize(12);
-        //     text('+10hp', this.x + (this.w / 2) + 10, this.y);
-        //     pop();
-        // }
 
         if (this.hpTextShown) {
             this.hpText.show();

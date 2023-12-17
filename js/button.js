@@ -27,8 +27,6 @@ class Button {
 
     pressed() {
         if (this.intersectPoint(mouseX, mouseY)) {
-            // console.log('Button pressed');
-            
             this.clicked = true;
             return true;
         }
@@ -36,7 +34,6 @@ class Button {
     
     released() {
         if (this.clicked && this.intersectPoint(mouseX, mouseY)) {
-            // console.log('Button released');
             clickSound.setVolume(0.5);
             clickSound.play();
 

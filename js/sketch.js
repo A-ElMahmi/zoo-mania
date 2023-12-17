@@ -3,7 +3,6 @@ let boxes = [];
 let data;
 let currentLevelPoints = [];
 let sign;
-// let signFont;
 let bangersFont;
 let nextBtn;
 let nextBtnImg;
@@ -40,7 +39,6 @@ function preload() {
     });
 
     sign = loadImage('assets/images/sign2.png');
-    // signFont = loadFont('assets/fonts/Woodbone.otf');
     bangersFont = loadFont('assets/fonts/Bangers.ttf');
     nextBtnImg = loadImage('assets/images/right-arrow.png');
     healthBarImgHollow = loadImage('assets/images/bar-hollow.png');
@@ -64,14 +62,10 @@ function setup() {
 
     startScreenBtn = new Button(startScreenBtnImg, width / 2, 350, 300, 100);
     
-    // loadLevel(currentLevel);
     nextBtn = new Button(nextBtnImg, width - 40, height - 39, 60, 58);
     healthBar = new HealthBar((width / 2) - 202, 15);
     gameOverBtn = new Button(gameOverBtnImg, width / 2, 320, 300, 100);
     endScreenBtn = new Button(endScreenBtnImg, width / 2, 320, 300, 100);
-
-    // successSound.play();
-    // getAudioContext().resume();
 
     bgMusic = loadSound('assets/sfx/bg-music.mp3', song => {
         song.setVolume(0.15);
@@ -80,12 +74,6 @@ function setup() {
 }
 
 function draw() {
-    // var context = drawingContext; // or p5.drawingContext
-    // context .shadowOffsetX = 0;
-    // context .shadowOffsetY = 4;
-    // context .shadowBlur = 20;
-    // context .shadowColor = '#0006';
-
     background(220);
     
     if (gameState === 'start') {
@@ -140,12 +128,6 @@ function draw() {
     if (health <= 10) {
         gameState = 'dead';
     }
-
-    // push();
-    // textSize(48);
-    // textFont(bangersFont);
-    // text(round(health), width/2, height/2);
-    // pop();
 }
 
 function mousePressed() {
@@ -212,18 +194,9 @@ function mouseReleased() {
     }
 }
 
-function mouseMoved() {
-    // console.log(round(mouseX), round(mouseY));
-    // successSound.play();
-}
-
 function loadLevel(level) {
     boxes = [];
     currentLevelPoints = [];
-
-    // bg = loadImage('assets/images/level' + level + '.png', img => {
-    //     img.resize(width, height);
-    // });
 
     for (let i = 0; i < data[level].length; i++) {
         let x = data[level][i].x;
