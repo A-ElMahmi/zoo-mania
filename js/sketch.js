@@ -32,7 +32,7 @@ function preload() {
     });
     startScreenBtnImg = loadImage('assets/images/start-btn.png');
 
-    data = loadJSON('data.json', data => {
+    data = loadJSON('js/data.json', data => {
         for (let i = 0; i < data.length; i++) {
             bg.push(loadImage('assets/images/level' + i + '.png'));
         }
