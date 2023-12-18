@@ -16,11 +16,11 @@ Play the game on [Itch.io](https://a-elmahmi.itch.io/zoo-mania)
 - The player's score is based on how fast they can complete the game
 
 ## Screenshots
-![Start Screen](https://github.com/A-ElMahmi/zoo-mania/screenshots/itch-thumbnail.jpg)
-![Level 1](https://github.com/A-ElMahmi/zoo-mania/screenshots/level1.png)
-![Level 2](https://github.com/A-ElMahmi/zoo-mania/screenshots/level2.png)
-![Level 4 - Loss](https://github.com/A-ElMahmi/zoo-mania/screenshots/level4-loss.png)
-![Level 5 - Win](https://github.com/A-ElMahmi/zoo-mania/screenshots/level5-win.png)
+![Start Screen](/screenshots/itch-thumbnail.jpg)
+![Level 1](/screenshots/level1.png)
+![Level 2](/screenshots/level2.png)
+![Level 4 - Loss](/screenshots/level4-loss.png)
+![Level 5 - Win](/screenshots/level5-win.png)
 
 ## Setup Instructions
 Install NPM Packages:
