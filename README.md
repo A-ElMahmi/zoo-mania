@@ -1,8 +1,14 @@
 # Zoo-Mania
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![p5js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=FFFFFF)
+![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white)
+
 > Test your French vocabulary with this Animal matching game
 
 Play the game on [Itch.io](https://a-elmahmi.itch.io/zoo-mania)
 
+## About
 A language learning game built for [TU Dublin Game Jam](https://itch.io/jam/tudublin-game-jam-2023) 
 
 The browser game was built using the [p5.js](https://p5js.org/) library
