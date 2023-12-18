@@ -18,7 +18,10 @@ The browser game was built using the [p5.js](https://p5js.org/) library
 - The player's score is based on how fast they can complete the game
 
 ## Screenshots
-![Start Screen](/screenshots/itch-thumbnail.jpg)
+<p align="center">
+    <img src="screenshots/itch-thumbnail.jpg" alt="Start Screen">
+</p>
+
 ![Level 1](/screenshots/level1.png)
 ![Level 2](/screenshots/level2.png)
 ![Level 4 - Loss](/screenshots/level4-loss.png)
