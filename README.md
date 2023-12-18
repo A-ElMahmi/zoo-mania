@@ -8,12 +8,11 @@
 
 Play the game on [Itch.io](https://a-elmahmi.itch.io/zoo-mania)
 
-## About
-A language learning game built for [TU Dublin Game Jam](https://itch.io/jam/tudublin-game-jam-2023) 
+- Language learning game made for [TU Dublin Game Jam](https://itch.io/jam/tudublin-game-jam-2023) 
+- Got 2nd place in the Game Jam
+- Built using the [p5.js](https://p5js.org/) library
 
-The browser game was built using the [p5.js](https://p5js.org/) library
-
-
+## Description
 - The player must drag the sign to the correct animal
 - There are 5 levels (from easiest to hardest):
     - Farm Animals
@@ -34,8 +33,17 @@ The browser game was built using the [p5.js](https://p5js.org/) library
 ![Level 5 - Win](/screenshots/level5-win.png)
 
 ## Setup Instructions
-1. Install NPM Packages: `npm install`
-2. Run Live Server: `npm run server`
+1. Install NPM Packages: 
+
+```bash
+$ npm install
+```
+
+2. Run Live Server: 
+```bash
+$ npm run server
+```
+
 3. Go to `localhost:8080` in your browser
 
 ## How to Play
