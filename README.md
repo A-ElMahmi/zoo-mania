@@ -8,7 +8,7 @@
 
 Play the game on [Itch.io](https://a-elmahmi.itch.io/zoo-mania)
 
-- Language learning game made for [TU Dublin Game Jam](https://itch.io/jam/tudublin-game-jam-2023) 
+- Language learning game made for [TU Dublin Game Jam](https://itch.io/jam/tudublin-game-jam-2023) in 48-hours
 - Got 2nd place in the Game Jam
 - Built using the [p5.js](https://p5js.org/) library
 
